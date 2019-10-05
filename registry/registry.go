@@ -8,7 +8,7 @@ type Registry interface {
 	Name() string
 
 	// 初始化
-	Init(ctx context.Context, opts ...Options) (err error)
+	Init(ctx context.Context, opts ...Option) (err error)
 
 	// 服务注册
 	Register(ctx context.Context, service *Service) (err error)

@@ -8,6 +8,10 @@ type Options struct {
 	Addrs []string
 	// 一个是与注册中心交互的超时时间
 	Timeout time.Duration
+	// etcd 中的路径
+	RegistryPath string
+	// 心跳时间
+	HeartBeat int64
 }
 
 type Option func(opts *Options)
